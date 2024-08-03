@@ -1,11 +1,32 @@
-import React, { Suspense,useEffect,useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
-
 import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf')
+  const { scene } = useGLTF('./desktop_pc/scene.gltf');
+
+  useEffect(() => {
+    // Check if the scene is loaded correctly and log position attributes
+    if (scene) {
+      scene.traverse((child) => {
+        if (child.isMesh && child.geometry) {
+          const positionAttribute = child.geometry.attributes.position;
+          if (positionAttribute) {
+            for (let i = 0; i < positionAttribute.count; i++) {
+              const x = positionAttribute.getX(i);
+              const y = positionAttribute.getY(i);
+              const z = positionAttribute.getZ(i);
+              if (isNaN(x) || isNaN(y) || isNaN(z)) {
+                console.error(`Invalid position value at index ${i}: x=${x}, y=${y}, z=${z}`);
+              }
+            }
+          }
+        }
+      });
+    }
+  }, [scene]);
+
   return (
     <mesh>
       <hemisphereLight intensity={2.15} groundColor='black' />
@@ -19,54 +40,52 @@ const Computers = ({ isMobile }) => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={computer.scene}
+        object={scene}
         scale={isMobile ? 0.5 : 0.75}
         position={isMobile ? [0, -3, -1.4] : [0, -3.25, -2]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
-  )
-}
+  );
+};
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() =>{
+  useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 700px)");
-
-
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-    }
+    };
+    
     mediaQuery.addEventListener("change", handleMediaQueryChange);
     
-    return () => { mediaQuery.removeEventListener("change", handleMediaQueryChange);
-    }
-  },[])
-
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <Canvas
-    frameloop='demand'
-    shadows
-    dpr={[1, 2]}
-    camera={{ position: [20, 3, 5], fov: 25 }}
-    gl={{ preserveDrawingBuffer: true }}
-  >
-    <Suspense fallback={<CanvasLoader />}>
-      <OrbitControls
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-      />
-      <Computers isMobile={isMobile} />
-    </Suspense>
-
-    <Preload all />
-  </Canvas>
-  )
-}
+      frameloop='demand'
+      shadows
+      dpr={[1, 2]}
+      camera={{ position: [20, 3, 5], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
+    >
+      <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        />
+        <Computers isMobile={isMobile} />
+      </Suspense>
+      <Preload all />
+    </Canvas>
+  );
+};
 
 export default ComputersCanvas;
