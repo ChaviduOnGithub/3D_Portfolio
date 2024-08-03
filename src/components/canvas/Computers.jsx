@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
-  const { scene } = useGLTF('./desktop_pc/scene.gltf');
+  const { scene } = useGLTF('./desktop_pc/scene.gltf', true, true); // Enable draco compression and ktx2 textures
 
   useEffect(() => {
     // Check if the scene is loaded correctly and log position attributes
