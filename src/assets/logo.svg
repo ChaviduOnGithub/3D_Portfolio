@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="343" viewBox="0 0 343 343">
+  <g transform="matrix(1,0,0,1,0,0)">
+    <svg viewBox="0 0 343 343" data-background-color="#ffffff" preserveAspectRatio="xMidYMid meet" height="343" width="343" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <g id="tight-bounds" transform="matrix(1,0,0,1,0,0)">
+        <svg viewBox="0 0 343 343" height="343" width="343">
+          <g>
+            <svg></svg>
+          </g>
+          <g>
+            <svg viewBox="0 0 343 343" height="343" width="343">
+              <g>
+                <path d="M0 171.5c0-94.7 76.8-171.5 171.5-171.5S343 76.8 343 171.5 266.2 343 171.5 343 0 266.2 0 171.5zM171.5 329.2c87.1 0 157.8-70.7 157.8-157.8S258.6 13.6 171.5 13.6 13.6 84.3 13.6 171.4 84.4 329.2 171.5 329.2z" data-fill-palette-color="tertiary" fill="#f72525" stroke="transparent"></path>
+                <ellipse rx="171.5" ry="171.5" cx="171.5" cy="171.5" fill="#f72525" stroke="transparent" stroke-width="0" fill-opacity="1" data-fill-palette-color="tertiary"></ellipse>
+              </g>
+              <g transform="matrix(1,0,0,1,64.8,95.7)">
+                <svg viewBox="0 0 213.2 151.5" height="151.5" width="213.2">
+                  <g>
+                    <svg viewBox="0 0 213.2 151.5" height="151.5" width="213.2">
+                      <g>
+                        <svg viewBox="0 0 213.2 151.5" height="151.5" width="213.2">
+                          <g>
+                            <svg viewBox="0 0 213.2 151.5" height="151.5" width="213.2">
+                              <g id="textblocktransform">
+                                <svg viewBox="0 0 213.2 151.5" height="151.5" width="213.2" id="textblock">
+                                  <g>
+                                    <svg viewBox="0 0 213.2 151.5" height="151.5" width="213.2">
+                                      <g transform="matrix(1,0,0,1,0,0)">
+                                        <svg width="213.2" viewBox="2 -28 39.41 28" height="151.5" data-palette-color="#ffffff">
+                                          <path d="M24.51 0L24.51-15.6Q24.51-16.55 24.28-17.13 24.05-17.7 23.69-18.01 23.34-18.31 22.9-18.41 22.46-18.51 22.05-18.51L22.05-18.51Q20.46-18.51 19.68-17.58 18.9-16.65 18.9-14.94L18.9-14.94 18.9-11.45Q18.9-10.16 19.35-9.61 19.8-9.06 21.09-9.06L21.09-9.06 22.41-9.06 22.41 0 2 0 2-9.06 3.44-9.06Q4.44-9.06 4.97-9.7 5.49-10.35 5.49-11.25L5.49-11.25 5.49-15.89Q5.49-17.04 4.82-17.44 4.15-17.85 3.3-17.85L3.3-17.85 2-17.85 2-26.9 16.5-26.9 15.99-20.19 16.41-20.19Q16.94-23.95 19.7-25.98 22.46-28 27.2-28L27.2-28Q30.54-28 32.64-27.05 34.74-26.1 35.9-24.65 37.06-23.19 37.48-21.5 37.89-19.8 37.89-18.31L37.89-18.31 37.89-11.45Q37.89-10.16 38.34-9.61 38.79-9.06 40.09-9.06L40.09-9.06 41.41-9.06 41.41 0 24.51 0Z" opacity="1" transform="matrix(1,0,0,1,0,0)" fill="#ffffff" class="wordmark-text-0" data-fill-palette-color="quaternary" id="text-0"></path>
+                                        </svg>
+                                      </g>
+                                    </svg>
+                                  </g>
+                                </svg>
+                              </g>
+                            </svg>
+                          </g>
+                        </svg>
+                      </g>
+                    </svg>
+                  </g>
+                </svg>
+              </g>
+            </svg>
+          </g>
+        </svg>
+      </g>
+    </svg>
+  </g>
+</svg>
