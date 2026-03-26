@@ -12,6 +12,9 @@ import {
     figma,
     threejs,
     images,
+    github,
+    cookease
+
   } from "../assets";
   
   export const navLinks = [
@@ -86,63 +89,53 @@ import {
   
   const projects = [
     {
-      name: "XXXX",
+      name: "Pregassist",
       description:
-        "djkfnjonuiog uionrtjoe grturt grti9ghmrtiomgb btrjnbt btnb tbtbu tmb4ubjt guinghn enjkbyuguirhegrtioeghrtuo uiengr5gt rntgb54un g5ugn45guin5.",
+        "",
       tags: [
         {
-          name: "javascript",
+          name: "dart",
           color: "blue-text-gradient",
         },
         {
-          name: "html",
-          color: "green-text-gradient",
+          name: "C#",
+          color: "pink-text-gradient",
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "flutter",
+          color: "blue-text-gradient",
         },
       ],
       image: images,
       source_code_link: "https://github.com/pulasthiBuddikaGit/PregAssist",
     },
     {
-      name: "XXXX",
+      name: "Cookease smart recipe app",
       description:
-        "rghuireouig uieargjkrnegu uienruigrbhe hiberuij guirtebgui g buier gherbuig rej gui uier gh ergu rejh gryuinguiregurngj erigrjienguin g.",
+        "",
       tags: [
         {
-          name: "react",
+          name: "react native",
           color: "blue-text-gradient",
         },
         {
-          name: "bootstrap",
+          name: "node.js",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "google cloud vision",
           color: "pink-text-gradient",
         },
       ],
-      image: images,
-      source_code_link: "https://github.com/",
+      image: cookease,
+      source_code_link: "https://github.com/pulasthiBuddikaGit/CookEase",
     },
     {
-      name: "XXXX",
       description:
-        "wjinrfgerg rengjkrgj uiergkj eg ger gebrg er vguiegr rbeg regvhie gre bui bi bjbte dbf fg h  g rtgfgdbtghwregwre dbrthwr etrthrt.",
-      tags: [
-        {
-          name: "xml",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "kotlin",
-          color: "green-text-gradient",
-        },
-      ],
-      image: images,
-      source_code_link: "https://github.com/",
+        "Checkout my github for more projects ",
+    
+      image: github,
+      source_code_link: "https://github.com/NisalkaJay",
     },
   ];
   
