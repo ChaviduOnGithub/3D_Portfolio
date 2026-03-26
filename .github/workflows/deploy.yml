@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+# Force GitHub Actions to use Node 24 to clear the v4 action deprecation warnings
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   build:
     name: Build
@@ -18,7 +22,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-          cache: 'npm' # This replaces the need for bahmutov/npm-install
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
