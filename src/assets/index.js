@@ -16,9 +16,8 @@ import reactjs from "./tech/reactjs.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 
-
-import images from "./images.jpeg"
-
+import images from "./images.jpeg";
+import cookease from "./cookease.png";
 
 export {
   logo,
@@ -38,5 +37,5 @@ export {
   tailwind,
   threejs,
   images,
-  
+  cookease,
 };
